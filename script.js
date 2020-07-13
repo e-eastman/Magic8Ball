@@ -6,8 +6,7 @@ $("#answer").hide();
 
 //define Method
 	magic8Ball.askQuestion = function(question){ 	
-	$("#8ball").attr("src", "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/answerside.png");       
-	
+		$("#8ball").attr("src", "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/8side.png");
 	//create a random number
 	var randomNumber = Math.random(); 
 	var randomNumberForAnswer = randomNumber * this.answerList.length;
@@ -25,7 +24,7 @@ $("#answer").hide();
 	$("#answer").hide();
 	$("#answer").fadeIn(4000);
 	$("#8ball").effect( "shake" );
-	$("#8ball").attr("src", "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/8side.png");
+	$("#8ball").attr("src", "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/answerside.png");       
 	};
 
 	//wait half a second before showing prompt
